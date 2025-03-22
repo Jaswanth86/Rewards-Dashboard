@@ -1,0 +1,92 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1890ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.auth-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-controls span {
+  color: white;
+  font-weight: bold;
+}
+
+.auth-controls a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-controls a:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background: #ff4d4f;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background: #d9363e;
+}
+
+.content {
+  padding: 20px;
+}
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.reward-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px; /* Ensure a minimum height to prevent layout shifts */
+}
+
+.reward-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Set a fixed aspect ratio to prevent layout shifts */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
